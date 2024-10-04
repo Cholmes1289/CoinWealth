@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinWealth Support</title>
+    <title>CoinWealth - Personal Finance Management Support</title>
     <style>
+        :root {
+            --green: #4CAF50;
+            --red: #F44336;
+            --gold: #FFD700;
+            --black: #333333;
+            --white: #FFFFFF;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -12,34 +19,79 @@
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
+            color: var(--black);
+            background-color: var(--white);
         }
-        h1 {
-            color: #333;
+        h1, h2 {
+            color: var(--green);
         }
-        h2 {
-            color: #666;
+        .feature-list {
+            background-color: var(--white);
+            border: 2px solid var(--gold);
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .feature-list h3 {
+            margin-top: 0;
+            color: var(--gold);
+        }
+        .btn {
+            background-color: var(--gold);
+            color: var(--black);
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .income {
+            color: var(--green);
+        }
+        .debt {
+            color: var(--red);
+        }
+        footer {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid var(--gold);
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <h1>CoinWealth Support</h1>
     
-    <h2>Welcome to CoinWealth Support</h2>
-    <p>Thank you for using CoinWealth. We're here to help you with any questions or issues you may have.</p>
+    <h2>Welcome to CoinWealth - Your Personal Finance Management Assistant</h2>
+    <p>Thank you for choosing CoinWealth. We're here to help you take control of your finances and achieve your financial goals.</p>
+    
+    <div class="feature-list">
+        <h3>Key Features:</h3>
+        <ul>
+            <li><span class="income">Income</span> and Expense Tracking</li>
+            <li>Goals and <span class="debt">Debt</span> Tracking</li>
+            <li>"Should I Buy It?" Decision Tool</li>
+            <li>Financial To-Do List Maker</li>
+            <li>Deep Insights Tools</li>
+        </ul>
+        <p><strong>Best of all, CoinWealth is completely free to use!</strong></p>
+    </div>
     
     <h2>Frequently Asked Questions</h2>
     <ul>
-        <li>How do I create an account?</li>
-        <li>How can I reset my password?</li>
-        <li>Is my data secure?</li>
-        <!-- Add more FAQs as needed -->
+        <li>How do I start tracking my expenses?</li>
+        <li>Can I set multiple financial goals?</li>
+        <li>How does the "Should I Buy It?" feature work?</li>
+        <li>Is my financial data secure?</li>
+        <li>How can I get the most out of the insights tools?</li>
     </ul>
     
     <h2>Contact Us</h2>
-    <p>If you need further assistance, please contact us at: support@coinwealth.com</p>
+    <p>If you need further assistance or have any questions, please don't hesitate to contact our support team at: support@coinwealth.com</p>
     
-    <h2>App Store Information</h2>
-    <p>CoinWealth is available on the iOS App Store. Download it today to start managing your cryptocurrency portfolio!</p>
+    <h2>Download CoinWealth</h2>
+    <p>CoinWealth is available for free on the iOS App Store. Download it today to start your journey towards better financial health!</p>
+    <a href="#" class="btn">Download Now</a>
     
     <footer>
         <p>&copy; 2024 CoinWealth. All rights reserved.</p>
