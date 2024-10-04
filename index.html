@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinWealth - Personal Finance Management Support</title>
+    <title>CoinWealth - Personal Finance Management</title>
     <style>
         :root {
             --green: #4CAF50;
@@ -11,90 +11,155 @@
             --gold: #FFD700;
             --black: #333333;
             --white: #FFFFFF;
+            --light-gray: #f5f5f5;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 0;
             color: var(--black);
             background-color: var(--white);
         }
-        h1, h2 {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--green);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
             color: var(--green);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
         }
-        .feature-list {
-            background-color: var(--white);
-            border: 2px solid var(--gold);
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 20px;
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
         }
-        .feature-list h3 {
-            margin-top: 0;
+        .feature-item {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-item i {
+            font-size: 2em;
             color: var(--gold);
+            margin-bottom: 10px;
         }
         .btn {
             background-color: var(--gold);
             color: var(--black);
-            padding: 10px 15px;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
-        .income {
+        .btn:hover {
+            background-color: #e5c100;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            font-weight: bold;
             color: var(--green);
+            cursor: pointer;
         }
-        .debt {
-            color: var(--red);
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
         }
         footer {
-            margin-top: 20px;
-            padding-top: 10px;
+            margin-top: 40px;
+            padding-top: 20px;
             border-top: 1px solid var(--gold);
             text-align: center;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
-    <h1>CoinWealth Support</h1>
-    
-    <h2>Welcome to CoinWealth - Your Personal Finance Management Assistant</h2>
-    <p>Thank you for choosing CoinWealth. We're here to help you take control of your finances and achieve your financial goals.</p>
-    
-    <div class="feature-list">
-        <h3>Key Features:</h3>
-        <ul>
-            <li><span class="income">Income</span> and Expense Tracking</li>
-            <li>Goals and <span class="debt">Debt</span> Tracking</li>
-            <li>"Should I Buy It?" Decision Tool</li>
-            <li>Financial To-Do List Maker</li>
-            <li>Deep Insights Tools</li>
-        </ul>
-        <p><strong>Best of all, CoinWealth is completely free to use!</strong></p>
+    <header>
+        <h1>CoinWealth</h1>
+        <p>Your Personal Finance Management Assistant</p>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to CoinWealth</h2>
+        <p>Take control of your finances and achieve your financial goals with our powerful, easy-to-use app.</p>
+
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Income & Expense Tracking</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-bullseye"></i>
+                <h3>Goals & Debt Tracking</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>"Should I Buy It?" Tool</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-tasks"></i>
+                <h3>Financial To-Do List</h3>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Deep Insights</h3>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">How do I start tracking my expenses?</div>
+            <div class="faq-answer">To start tracking expenses, simply tap the '+' button in the app and enter the details of your purchase. You can categorize expenses for better insights.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I set multiple financial goals?</div>
+            <div class="faq-answer">Yes! CoinWealth allows you to set and track multiple financial goals simultaneously. Go to the 'Goals' section to add and manage your objectives.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How does the "Should I Buy It?" feature work?</div>
+            <div class="faq-answer">This feature helps you make informed purchasing decisions. Enter the item's cost and details, and the app will analyze its impact on your budget and financial goals.</div>
+        </div>
+
+        <h2>Download CoinWealth</h2>
+        <p>CoinWealth is available for free on the iOS App Store. Start your journey towards better financial health today!</p>
+        <a href="#" class="btn">Download Now</a>
+
+        <footer>
+            <p>&copy; 2024 CoinWealth. All rights reserved.</p>
+        </footer>
     </div>
-    
-    <h2>Frequently Asked Questions</h2>
-    <ul>
-        <li>How do I start tracking my expenses?</li>
-        <li>Can I set multiple financial goals?</li>
-        <li>How does the "Should I Buy It?" feature work?</li>
-        <li>Is my financial data secure?</li>
-        <li>How can I get the most out of the insights tools?</li>
-    </ul>
-    
-    <h2>Contact Us</h2>
-    <p>If you need further assistance or have any questions, please don't hesitate to contact our support team at: support@coinwealth.com</p>
-    
-    <h2>Download CoinWealth</h2>
-    <p>CoinWealth is available for free on the iOS App Store. Download it today to start your journey towards better financial health!</p>
-    <a href="#" class="btn">Download Now</a>
-    
-    <footer>
-        <p>&copy; 2024 CoinWealth. All rights reserved.</p>
-    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
